@@ -1,0 +1,45 @@
+﻿@page "/blogposts"
+@using BlazorBlog.Data.Entities
+
+<h3>Blogposts</h3>
+
+<span>Write a new blogpost here</span>
+<input type="text" placeholder="Title" value=""/>
+<input type="text" placeholder="Content" value="" />
+<button>Submit</button>
+
+@foreach(var post in Posts)
+{
+	<div class="posts">
+	<div>
+		<h2>@post.Title</h2>
+	</div>
+	<div>
+		<span>@post.Description</span>
+	</div>
+	</div>
+
+}
+
+
+
+@code {
+	public List<BlogPost> Posts { get; set; } = new List<BlogPost>(){
+		new BlogPost {
+			Title = "Hejhej",
+			Description = "Testpost",
+			Content = "Aiojaosdjaoisjd asjdoiajd iasjdasjdoaisjdaisjd aoisdj aoisjdao sjdaoidsaij"
+		},
+		new BlogPost {
+			Title = "Testpost2",
+			Description = "Testpost2",
+			Content = "Aiojaosdjaoisjd asjdoiajd iasjdasjdoaisjdaisjd aoisdj aoisjdao sjdaoidsaij"
+		},
+		new BlogPost {
+			Title = "Testpost3",
+			Description = "Testpost3",
+			Content = "Aiojaosdjaoisjd asjdoiajd iasjdasjdoaisjdaisjd aoisdj aoisjdao sjdaoidsaij"
+		},
+	};
+
+}

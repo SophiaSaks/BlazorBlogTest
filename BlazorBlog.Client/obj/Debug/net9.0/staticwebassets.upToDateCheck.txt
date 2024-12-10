@@ -1,0 +1,4 @@
+C:\Users\sophi\Kodprojekt\BlazorBlog\BlazorBlog.Client\wwwroot\appsettings.json
+C:\Users\sophi\Kodprojekt\BlazorBlog\BlazorBlog.Client\wwwroot\appsettings.Development.json
+wwwroot\appsettings.Development.json
+wwwroot\appsettings.json
